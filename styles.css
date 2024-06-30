@@ -1,0 +1,278 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #ffffff;
+}
+header {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 10px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+/* Hero section */
+.hero-section {
+    background: url('girl2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #ff6347;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #e5533d;
+}
+
+/* About section */
+.about-section {
+    background: #1f1f1f;
+    padding: 60px 0;
+    text-align: center;
+}
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.about-section p {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Projects section */
+.projects-section {
+    background: #121212;
+    padding: 60px 0;
+    text-align: center;
+}
+.projects-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.project {
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.project p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.project .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6347;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.project .btn:hover {
+    background: #e5533d;
+}
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Skills section */
+.skills-section {
+    background: #1f1f1f;
+    padding: 60px 0;
+    text-align: center;
+}
+.skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.skill {
+    text-align: left;
+    width: 300px;
+}
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.skill-bar {
+    background: #333333;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.skill-level {
+    background: #ff6347;
+    height: 100%;
+    width: 90%; /* Change the width according to skill level */
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s ease;
+}
+.skill .html .skill-level {
+    width: 90%;
+}
+.skill .css .skill-level {
+    width: 85%;
+}
+.skill .js .skill-level {
+    width: 80%;
+}
+.skill .react .skill-level {
+    width: 75%;
+}
+
+/* Contact section */
+.contact-section {
+    background: #121212;
+    padding: 60px 0;
+    text-align: center;
+}
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6347;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #e5533d;
+}
+
+/* Footer section */
+.footer-section {
+    background: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.social-icons li {
+    font-size: 1.5em;
+}
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #ff6347;
+}
+
+
